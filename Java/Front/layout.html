@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FunRecipe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<!-- px py: horizontal and vertical padding
+     me mb mt: right, bottom, and top margin
+-->
+<nav class="navbar navbar-expand-lg bg-light px-3 py-2 shadow-sm">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+    <!-- Logo -->
+    <div class="d-flex align-items-center">
+      <img src="logo.png" alt="Logo" width="40" height="40" class="me-2">
+      <span class="navbar-brand mb-0 h4">FunRecipe</span>
+    </div>
+
+    <!-- Filter and Search -->
+    <div class="d-flex align-items-center">
+      <!--search field-->
+      <div class="position-relative w-85">
+        <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ps-3 text-muted"></i>
+        <input class="form-control rounded-pill ps-5" type="search" placeholder="Search...">
+      </div>
+      <!--filter button-->
+      <button class="btn me-2">
+        <i class="bi bi-funnel"></i>
+      </button>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="d-flex align-items-center gap-3">
+      <a href="#" class="btn"><i class="bi bi-house-door"></i> Home</a>
+      <a href="#" class="btn"><i class="bi bi-pencil-square"></i> Create</a>
+      <a href="#" class="btn"><i class="bi bi-box-arrow-right"></i> Log out</a>
+    </div>
+  </div>
+</nav>
+
+<!--main -->
+<div class="container-fluid mt-4">
+  <div class="row">
+
+    <!-- Left Sidebar -->
+    <div class="col-md-2 ms-5">
+      <div class="sidebar-box p-2 d-flex flex-column align-items-center">
+        <!-- Profile Image Placeholder -->
+        <div class="profile-img mb-3">
+            <img src="profile_pic_cat.png" alt="Logo" class="img-fluid rounded">
+        </div>
+        <!-- Menu Buttons -->
+        <div class="d-grid gap-3 w-100">
+          <a href="#" class="btn btn-light d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-person-circle"></i> My Profile
+          </a>
+          <a href="#" class="btn btn-light d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-journal-bookmark-fill"></i> My Recipes
+          </a>
+          <a href="#" class="btn btn-light d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-bookmark-star"></i> My Favorites
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--card content -->
+    <div class="col-md-9 d-flex justify-content-center">
+      <div class="col-md-12">
+        <div class="recipe-card shadow-sm p-4 position-relative bg-light rounded">
+
+        <!-- Clickable content (except buttons) -->
+        <a href="###" class="stretched-link text-decoration-none text-dark">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <h3 class="fw-bold mb-2">recipe name</h3>
+              <h5 class="fw-semibold mb-3">description</h5>
+            </div>
+            <small class="text-muted text-end">By username<br>5/9/2025</small>
+          </div>
+          <p class="text-muted small mb-5">
+            his is a long description that wraps correctly and stays inside the card lacorrectly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.correctly and stays inside the card layout without overflow.yout without overflow.
+          </p>
+        </a>
+
+            <!-- Buttons (not part of the link) -->
+          <div class="position-absolute bottom-0 end-0 m-3 d-flex gap-2">
+            <button class="btn btn-sm btn-outline-secondary position-relative" title="Comment">
+              <i class="bi bi-chat-dots"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-secondary position-relative" title="Save">
+              <i class="bi bi-bookmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

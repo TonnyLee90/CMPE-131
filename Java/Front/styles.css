@@ -1,0 +1,46 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar img {
+  object-fit: contain;
+}
+
+
+.placeholder-box {
+      background-color: #ddd;
+      border-radius: 8px;
+      min-height: 80px;
+    }
+    .sidebar-box {
+      background-color: #ddd;
+      border-radius: 8px;
+      height: 300px;
+    }
+    .profile-box {
+      background-color: #ccc;
+      width: 100px;
+      height: 100px;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+    .footer {
+      background-color: #ddd;
+      height: 60px;
+      border-radius: 8px;
+    }
+.profile-img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recipe-card p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}

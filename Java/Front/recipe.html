@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container my-5">
+  <div class="card shadow-sm">
+    <div class="card-body">
+
+      <!-- Header -->
+      <h1 class="card-title mb-1">Delicious Lasagna</h1>
+      <p class="text-muted mb-2">By <strong>Chef Mario</strong> • Posted on April 25, 2025</p>
+      <div class="d-flex gap-2 mb-3">
+        <button class="btn btn-outline-primary btn-sm">💾 Save</button>
+        <button class="btn btn-outline-warning btn-sm">⭐ Rate</button>
+        <span class="rating-display">4.6 / 5</span>
+      </div>
+
+      <hr>
+
+      <!-- Description -->
+      <h4>Description</h4>
+      <p>This classic Italian lasagna is layered with rich meat sauce and creamy béchamel, perfect for a hearty family dinner.</p>
+
+      <hr>
+
+      <!-- Ingredients -->
+      <h4>Ingredients</h4>
+      <ul>
+        <li>12 lasagna noodles</li>
+        <li>1 lb ground beef</li>
+        <li>2 cups marinara sauce</li>
+        <li>1 cup ricotta cheese</li>
+        <li>2 cups mozzarella cheese</li>
+        <li>1/2 cup grated parmesan</li>
+      </ul>
+
+      <hr>
+
+      <!-- Instructions -->
+      <h4>Instructions</h4>
+      <ol>
+        <li>Boil the noodles and set aside.</li>
+        <li>Cook beef until browned. Add marinara sauce and simmer.</li>
+        <li>Layer noodles, meat sauce, ricotta, and mozzarella. Repeat.</li>
+        <li>Top with parmesan and bake at 375°F for 30 minutes.</li>
+        <li>Let rest 10 minutes before serving.</li>
+      </ol>
+
+      <hr>
+
+      <!-- Comments -->
+      <h4>Comments</h4>
+      <div class="mb-3">
+        <strong>Anna:</strong> <span>This recipe was amazing! My kids loved it.</span>
+      </div>
+      <div class="mb-3">
+        <strong>John:</strong> <span>Turned out perfect. Added some mushrooms!</span>
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <label for="comment" class="form-label">Leave a comment</label>
+          <textarea class="form-control" id="comment" rows="3" placeholder="Write your comment..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Comment</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+{% endblock content %}
